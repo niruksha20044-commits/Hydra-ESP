@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Verifying</title>
-<style>
-body{background:#1a1a1a;color:#fff;text-align:center;padding:20px;font-family:monospace;}
-.loader{border:4px solid #333;border-top:4px solid #e67e22;border-radius:50%;width:40px;height:40px;animation:spin 1s linear infinite;margin:20px auto;}
-@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-</style>
-</head>
-<body>
-<div class="loader"></div>
-<h2>Verifying Credentials...</h2>
-<p>Please wait while we validate your information.</p>
-<p style="font-size:12px;color:#888;">Do not close this window.</p>
-</body>
-</html>
+<body><div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-size:7vw;font-weight:900;color:#0f0;font-family:monospace;letter-spacing:3px;text-shadow:0 0 8px #0f0,0 0 15px #0f0;pointer-events:none;z-index:10;text-align:center;width:95%">YOUR NETWORK IS HACKED!</div><canvas id="m" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#000;z-index:1;display:block;touch-action:none"></canvas><script>const c=document.getElementById('m'),x=c.getContext('2d');function r(){const d=window.devicePixelRatio||1;c.width=window.innerWidth*d;c.height=window.innerHeight*d;x.scale(d,d)}r();const f=14,y=Array(Math.floor(window.innerWidth/f)).fill(1);setInterval(()=>{x.fillStyle='rgba(0,0,0,0.05)';x.fillRect(0,0,window.innerWidth,window.innerHeight);x.fillStyle='#0f0';x.font=f+'px monospace';y.forEach((v,i)=>{x.fillText(Math.random()>0.5?'0':'1',i*f,v*f);if(v*f>window.innerHeight&&Math.random()>0.975)y[i]=0;y[i]++})},30);window.addEventListener('resize',r);</script></body>
